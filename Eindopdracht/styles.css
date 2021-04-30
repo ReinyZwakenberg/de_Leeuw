@@ -1,0 +1,130 @@
+.parent{
+    display: grid;
+    grid-template-columns: 30px 1fr 1fr 30px;
+    grid-template-rows: 200px 1fr 1fr 75px;
+    height: 1000px;
+    grid-template-areas: 
+  ". h h ."
+  ". m m ."
+  ". n n ."
+  ". f f .";
+  background-color: #ffa34017;
+
+}
+
+header,nav,main,aside, footer{
+    margin: 10px;
+}
+
+header{
+    background-color: #AA8760;
+    border-radius: 15px; 
+    
+  
+}
+
+header, h1{
+    grid-area: h;
+    color: #5B352A;
+    font-size: 56px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 2px #666;
+    line-height: 25pt;
+    
+}
+
+header, h3{
+    grid-area: h;
+    color: #5B352A;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-shadow: none;    
+    
+}
+
+
+main{
+    grid-area: m;
+    border-radius: 15px;
+    
+}
+
+main, img{
+    border-radius: 15px;
+    margin: 10px;
+
+}
+
+.titel-main{
+
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #AA8760;
+    color: #291c19;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.tekst-main{
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #fc9d4f;
+    background-attachment: inherit;
+    color: #291c19;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+nav{
+    grid-area: n;
+    
+}
+
+.leeuw{
+    list-style: none;
+    padding: 8px;  
+    margin: 10px;
+    border-radius: 10px;
+    background-color:#bd9e86;
+    background-attachment: inherit;
+    color: #291c19;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: none;
+}
+
+
+
+footer{
+    grid-area: f;
+    background-color: #AA8760;
+    color: #e7ddd4;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 15px;
+}
+
+@media(min-width: 1024px){
+
+    main{
+        grid-area: m;
+        display: flex;
+        border-radius: 15px;
+        align-content: space-between;
+    
+    }
+
+    .tekst-main{
+       margin-left: 10px;
+    
+    }
+    
+
+}
